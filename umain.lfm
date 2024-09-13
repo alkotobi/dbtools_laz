@@ -1,0 +1,351 @@
+object frm_main: Tfrm_main
+  Left = 262
+  Height = 742
+  Top = 34
+  Width = 959
+  Caption = 'DB TOOLS'
+  ClientHeight = 742
+  ClientWidth = 959
+  OnClose = FormClose
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 193
+    Top = 26
+    Width = 959
+    Align = alTop
+    Caption = 'DATABASES'
+    ClientHeight = 166
+    ClientWidth = 949
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Height = 28
+      Top = 138
+      Width = 949
+      Align = alBottom
+      AutoSize = True
+      ClientHeight = 28
+      ClientWidth = 949
+      TabOrder = 0
+      object DBNavigator1: TDBNavigator
+        Left = 1
+        Height = 25
+        Top = 2
+        Width = 241
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 25
+        ClientWidth = 241
+        DataSource = dts_databases
+        Options = []
+        TabOrder = 0
+      end
+      object btn_dot_pas_path: TButton
+        Left = 248
+        Height = 25
+        Top = 1
+        Width = 75
+        Caption = 'PAS PATH'
+        TabOrder = 1
+        OnClick = btn_dot_pas_pathClick
+      end
+      object btn_create_dot_pas: TButton
+        Left = 336
+        Height = 25
+        Top = 1
+        Width = 136
+        Caption = 'CREATE DOT PAS'
+        TabOrder = 2
+        OnClick = btn_create_dot_pasClick
+      end
+      object btn_dot_pas_path1: TButton
+        Left = 488
+        Height = 25
+        Top = 1
+        Width = 75
+        Caption = 'DB PATH'
+        TabOrder = 3
+        OnClick = btn_dot_pas_path1Click
+      end
+    end
+    object DBGrid4: TDBGrid
+      Left = 0
+      Height = 138
+      Top = 0
+      Width = 949
+      Align = alClient
+      Color = clWindow
+      Columns = <>
+      DataSource = dts_databases
+      TabOrder = 1
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 0
+    Height = 193
+    Top = 219
+    Width = 959
+    Align = alTop
+    Caption = 'TABLES'
+    ClientHeight = 166
+    ClientWidth = 949
+    TabOrder = 1
+    object Panel2: TPanel
+      Left = 0
+      Height = 27
+      Top = 139
+      Width = 949
+      Align = alBottom
+      AutoSize = True
+      ClientHeight = 27
+      ClientWidth = 949
+      TabOrder = 0
+      object DBNavigator2: TDBNavigator
+        Left = 1
+        Height = 25
+        Top = 1
+        Width = 241
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 25
+        ClientWidth = 241
+        DataSource = dts_tables
+        Options = []
+        TabOrder = 0
+      end
+    end
+    object DBGrid2: TDBGrid
+      Left = 0
+      Height = 139
+      Top = 0
+      Width = 560
+      Align = alLeft
+      Color = clWindow
+      Columns = <>
+      DataSource = dts_tables
+      TabOrder = 1
+    end
+    object DBMemo1: TDBMemo
+      Left = 568
+      Height = 106
+      Top = 32
+      Width = 383
+      Anchors = [akLeft, akRight, akBottom]
+      DataField = 'create_sql'
+      DataSource = dts_tables
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 568
+      Height = 16
+      Top = 8
+      Width = 78
+      Caption = 'CREATE SQL'
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 330
+    Top = 412
+    Width = 959
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'FIELDS'
+      ClientHeight = 294
+      ClientWidth = 953
+      object DBGrid3: TDBGrid
+        Left = 0
+        Height = 267
+        Top = 0
+        Width = 953
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        DataSource = dts_fields
+        TabOrder = 0
+        OnColEnter = DBGrid3ColEnter
+        OnSelectEditor = DBGrid3SelectEditor
+      end
+      object Panel3: TPanel
+        Left = 0
+        Height = 27
+        Top = 267
+        Width = 953
+        Align = alBottom
+        AutoSize = True
+        ClientHeight = 27
+        ClientWidth = 953
+        TabOrder = 1
+        object DBNavigator3: TDBNavigator
+          Left = 1
+          Height = 25
+          Top = 1
+          Width = 241
+          BevelOuter = bvNone
+          ChildSizing.EnlargeHorizontal = crsScaleChilds
+          ChildSizing.EnlargeVertical = crsScaleChilds
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 100
+          ClientHeight = 25
+          ClientWidth = 241
+          DataSource = dts_fields
+          Options = []
+          TabOrder = 0
+        end
+        object Button1: TButton
+          Left = 250
+          Height = 25
+          Top = 1
+          Width = 139
+          Caption = 'RESET INDEXES'
+          TabOrder = 1
+          OnClick = Button1Click
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'DEFAULT DATA'
+      ClientHeight = 294
+      ClientWidth = 953
+      object DBGrid5: TDBGrid
+        Left = 0
+        Height = 267
+        Top = 0
+        Width = 953
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        DataSource = dts_data
+        TabOrder = 0
+      end
+      object Panel4: TPanel
+        Left = 0
+        Height = 27
+        Top = 267
+        Width = 953
+        Align = alBottom
+        AutoSize = True
+        ClientHeight = 27
+        ClientWidth = 953
+        TabOrder = 1
+        object DBNavigator4: TDBNavigator
+          Left = 1
+          Height = 25
+          Top = 1
+          Width = 241
+          BevelOuter = bvNone
+          ChildSizing.EnlargeHorizontal = crsScaleChilds
+          ChildSizing.EnlargeVertical = crsScaleChilds
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 100
+          ClientHeight = 25
+          ClientWidth = 241
+          DataSource = dts_data
+          Options = []
+          TabOrder = 0
+        end
+        object btn_default_data: TButton
+          Left = 256
+          Height = 25
+          Top = 1
+          Width = 128
+          Caption = 'DEFAULT DATA'
+          TabOrder = 1
+          OnClick = btn_default_dataClick
+        end
+        object btn_save_default_data: TButton
+          Left = 392
+          Height = 25
+          Top = 1
+          Width = 96
+          Caption = 'SAVE DATA'
+          TabOrder = 2
+          OnClick = btn_save_default_dataClick
+        end
+        object btn_load_data: TButton
+          Left = 496
+          Height = 25
+          Top = 1
+          Width = 96
+          Caption = 'LOAD DATA'
+          TabOrder = 3
+          OnClick = btn_load_dataClick
+        end
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 959
+    Caption = 'ToolBar1'
+    ShowCaptions = True
+    TabOrder = 3
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 2
+      Action = act_create_pas
+    end
+  end
+  object dts_databases: TDataSource
+    Left = 137
+    Top = 136
+  end
+  object dts_tables: TDataSource
+    Left = 70
+    Top = 245
+  end
+  object dlg_save: TSaveDialog
+    DefaultExt = '.pas'
+    Filter = 'pascal unites|*.pas'
+    Options = [ofOverwritePrompt, ofNoValidate, ofCreatePrompt, ofEnableSizing, ofViewDetail]
+    Left = 211
+    Top = 120
+  end
+  object dts_fields: TDataSource
+    Left = 117
+    Top = 548
+  end
+  object tbl_data: TUniTable
+    TableName = 'tables'
+    FilterOptions = []
+    Left = 224
+    Top = 504
+  end
+  object dts_data: TDataSource
+    DataSet = tbl_data
+    Left = 280
+    Top = 525
+  end
+  object ActionList1: TActionList
+    Left = 304
+    Top = 136
+    object act_create_pas: TAction
+      Caption = 'CREATE PAS FILE'
+    end
+  end
+  object dlg_open: TOpenDialog
+    DefaultExt = '.db'
+    Filter = 'db|*.db'
+    Left = 371
+    Top = 136
+  end
+end

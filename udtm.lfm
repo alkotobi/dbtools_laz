@@ -1,0 +1,10 @@
+object dtm: Tdtm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Left = 262
+  Top = 34
+  Height = 240
+  HorizontalOffset = 0
+  VerticalOffset = 0
+  Width = 320
+end

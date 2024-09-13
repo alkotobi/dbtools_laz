@@ -1,0 +1,204 @@
+object Form1: TForm1
+  Left = 441
+  Height = 240
+  Top = 210
+  Width = 320
+  Caption = 'Form1'
+  object MySQLUniProvider1: TMySQLUniProvider
+    Left = 68
+    Top = 10
+  end
+  object SQLiteUniProvider1: TSQLiteUniProvider
+    Left = 39
+    Top = 10
+  end
+  object UniConnection1: TUniConnection
+    ProviderName = 'SQLite'
+    Database = '/Users/mac/Documents/dbtools/db.db'
+    Left = 10
+    Top = 10
+  end
+  object UniTable1: TUniTable
+    TableName = 'fields'
+    FilterOptions = []
+    Left = 64
+    Top = 136
+    object TStringField
+      FieldKind = fkLookup
+      FieldName = 'table_name'
+      Index = 0
+      KeyFields = 'id_table'
+      LookupCache = False
+      LookupDataSet = UniTable2
+      LookupKeyFields = 'id'
+      LookupResultField = 'table_name'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object UniTable1id: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object UniTable1id_table: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_table'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object UniTable1field_name: TStringField
+      FieldKind = fkData
+      FieldName = 'field_name'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object UniTable1field_type: TStringField
+      FieldKind = fkData
+      FieldName = 'field_type'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object UniTable1field_length: TLongintField
+      FieldKind = fkData
+      FieldName = 'field_length'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object UniTable1display_width: TLongintField
+      FieldKind = fkData
+      FieldName = 'display_width'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object UniTable1display_label: TStringField
+      FieldKind = fkData
+      FieldName = 'display_label'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object UniTable1default_value: TStringField
+      FieldKind = fkData
+      FieldName = 'default_value'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1020
+    end
+    object UniTable1is_unique: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_unique'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_not_null: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_not_null'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_indexed: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_indexed'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_required: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_required'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_visible: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_visible'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_read_only: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_read_only'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1is_calculated: TBooleanField
+      FieldKind = fkData
+      FieldName = 'is_calculated'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object UniTable1description: TMemoField
+      FieldKind = fkData
+      FieldName = 'description'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object UniTable2: TUniTable
+    TableName = 'tables'
+    FilterOptions = []
+    Left = 217
+    Top = 136
+  end
+end

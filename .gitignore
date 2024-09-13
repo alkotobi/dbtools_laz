@@ -1,0 +1,16 @@
+
+.DS_Store
+
+dbtools.app/Contents/
+
+lib/x86_64-darwin/
+
+backup/
+
+Users/
+
+*.exe
+
+udb_tools_design copy.pas
+
+*.res
