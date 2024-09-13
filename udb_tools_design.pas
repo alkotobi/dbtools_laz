@@ -129,7 +129,7 @@ unit udb_tools_design;
 '					"is_calculated": false,'+
 '					"ind": 13'+
 '				}],'+
-'			"default_data": " †笠 †††∠摩㨢ㄠਬ††††昢敩摬祔数㨢∠义䕔䕇≒ †素ਬ††੻††††椢≤›ⰲ †††∠楦汥呤灹≥›嘢剁䡃剁ਢ††ⱽ †笠 †††∠摩㨢㌠ਬ††††昢敩摬祔数㨢∠䕒䱁ਢ††ⱽ †笠 †††∠摩㨢㐠ਬ††††昢敩摬祔数㨢∠䕔员ਢ††ⱽ †笠 †††∠摩㨢㔠ਬ††††昢敩摬祔数㨢∠䱂䉏ਢ††ⱽ †笠 †††∠摩㨢㘠ਬ††††昢敩摬祔数㨢∠佂䱏ਢ††ⱽ †笠 †††∠摩㨢㜠ਬ††††昢敩摬祔数㨢∠䅄䕔䥔䕍ਢ††੽?",'+
+'			"default_data": "[\n  {\n    \"id\" : 1,\n    \"fieldType\" : \"INTEGER\"\n  },\n  {\n    \"id\" : 2,\n    \"fieldType\" : \"VARCHAR\"\n  },\n  {\n    \"id\" : 3,\n    \"fieldType\" : \"REAL\"\n  },\n  {\n    \"id\" : 4,\n    \"fieldType\" : \"TEXT\"\n  },\n  {\n    \"id\" : 5,\n    \"fieldType\" : \"BLOB\"\n  },\n  {\n    \"id\" : 6,\n    \"fieldType\" : \"BOOL\"\n  },\n  {\n    \"id\" : 7,\n    \"fieldType\" : \"DATETIME\"\n  }\n]",'+
 '			"description": "",'+
 '			"insert_sql": "    INSERT INTO \"field_types\"(\"field_type\")\n    VALUES(:field_type);",'+
 '			"insert_params_count": 1,'+

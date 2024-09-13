@@ -27,6 +27,7 @@ type
     DBMemo1: TDBMemo;
     DBNavigator3: TDBNavigator;
     DBNavigator4: TDBNavigator;
+    dlg_db_save: TSaveDialog;
     dts_data: TDataSource;
     DBGrid2: TDBGrid;
     DBGrid4: TDBGrid;
@@ -278,13 +279,9 @@ end;
 
 procedure Tfrm_main.btn_dot_pas_path1Click(Sender: TObject);
 begin
-  if dlg_open.Execute then
+  if dlg_db_save.Execute then
   begin
-    dtm.connection_set_db_name(dlg_open.FileName);
-    //dtm.qry_databases.Open;
-    //dtm.qry_tables.Open;
-    //dtm.qry_field_types.Open;
-    //dtm.qry_fields.Open;
+    dtm.connection_set_db_name(dlg_db_save.FileName);
   end;
 end;
 

@@ -348,4 +348,12 @@ object frm_main: Tfrm_main
     Left = 371
     Top = 136
   end
+  object dlg_db_save: TSaveDialog
+    Title = 'db file'
+    DefaultExt = '.db'
+    Filter = 'databse_files|*.db'
+    Options = [ofNoValidate, ofEnableSizing, ofViewDetail]
+    Left = 496
+    Top = 120
+  end
 end

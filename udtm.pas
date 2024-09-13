@@ -36,6 +36,7 @@ type
     UniTable2is_visible: TBooleanField;
     procedure DataModuleCreate(Sender: TObject);
   private
+    Fdb_path: string;
     fqry_databases: tdataset;
     fconnection: TCustomConnection;
     fqry_tables: tdataset;
@@ -50,6 +51,7 @@ type
     function get_qry_fields: tdataset;
     function get_qry_field_types: tdataset;
     function get_qry_tables: tdataset;
+    procedure Setdb_path(AValue: string);
   public
     property connection: TCustomConnection read get_connection;
     property qry_databases: tdataset read get_qry_databases;
@@ -64,7 +66,8 @@ type
     procedure qry_fields_after_post(dataset: tdataset);
     procedure qry_fields_after_scroll(dataset: tdataset);
     procedure qry_fields_reset_ind();
-    procedure qry_fields_before_insert(sender:tdataset);
+    procedure qry_fields_before_insert(Sender: tdataset);
+    property db_path: string read Fdb_path write Setdb_path;
   end;
 
 function get_db_path(): string;
@@ -217,6 +220,7 @@ end;
 procedure Tdtm.DataModuleCreate(Sender: TObject);
 begin
   do_fields_after_post := True;
+  db_path := '';
 end;
 
 function Tdtm.get_connection: TCustomConnection;
@@ -278,7 +282,7 @@ begin
     fqry_fields.FieldByName(fields_field_type).set_visible(False);
     fqry_fields.AfterPost := self.qry_fields_after_post;
     fqry_fields.AfterScroll := self.qry_fields_after_scroll;
-    qry_fields.BeforeInsert:=qry_fields_before_insert;
+    qry_fields.BeforeInsert := qry_fields_before_insert;
     fqry_fields.Open;
   end;
   Result := fqry_fields;
@@ -318,6 +322,12 @@ begin
   Result := fqry_tables;
 end;
 
+procedure Tdtm.Setdb_path(AValue: string);
+begin
+  if Fdb_path = AValue then Exit;
+  Fdb_path := AValue;
+end;
+
 procedure Tdtm.create_db();
 begin
   db_create_from_json(self.connection, db_tools_db_json);
@@ -347,7 +357,6 @@ end;
 procedure Tdtm.connection_set_db_name(db_name: string);
 var
   i: integer;
-  str:string;
 begin
   connection.Close();
   udb_basic.connection_set_db_name(connection, db_name);
@@ -356,7 +365,6 @@ begin
 
   for i := 0 to (connection).DataSetCount - 1 do
   begin
-    str:=qry_get_sql(connection.datasets[i]);
     connection.datasets[i].Open;
   end;
 end;
@@ -379,14 +387,14 @@ begin
   begin
     try
       qry := qry_create_with_sql(connection,
-        'UPDATE fields set ind=:ind1 WHERE id !=:id and ind=:ind2', [field_index, id,
-        dataset.FieldByName('ind').Value]);
+        'UPDATE fields set ind=:ind1 WHERE id !=:id and ind=:ind2',
+        [field_index, id, dataset.FieldByName('ind').Value]);
       qry_exec(qry);
     finally
       qry.Free;
     end;
     dataset.Refresh;
-    dataset.Filter:='id='+inttostr(id);
+    dataset.Filter := 'id=' + IntToStr(id);
     dataset.FindFirst;
   end;
   do_fields_after_post := True;
@@ -400,7 +408,7 @@ begin
     field_index := qry_fields.FieldByName('ind').AsInteger;
   end
   else
-    field_index:=0;
+    field_index := 0;
 end;
 
 procedure Tdtm.qry_fields_reset_ind();
@@ -422,9 +430,9 @@ begin
   do_fields_after_post := True;
 end;
 
-procedure Tdtm.qry_fields_before_insert(sender: tdataset);
+procedure Tdtm.qry_fields_before_insert(Sender: tdataset);
 begin
-  if qry_tables.State in [dsEdit,dsInsert] then
+  if qry_tables.State in [dsEdit, dsInsert] then
   begin
     qry_tables.Post;
   end;

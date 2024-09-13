@@ -7,10 +7,10 @@
       <Unit>
         <Filename Value="dbtools.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="20"/>
-        <CursorPos X="10" Y="42"/>
-        <UsageCount Value="85"/>
+        <CursorPos X="24" Y="38"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -21,9 +21,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="27"/>
         <CursorPos Y="49"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,9 +32,10 @@
         <ComponentName Value="frm_main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="2"/>
-        <CursorPos Y="2"/>
-        <UsageCount Value="85"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="280"/>
+        <CursorPos X="3" Y="282"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -46,58 +46,56 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="363"/>
-        <CursorPos X="81" Y="382"/>
-        <UsageCount Value="85"/>
+        <TopLine Value="353"/>
+        <CursorPos X="7" Y="369"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="255"/>
-        <CursorPos X="3" Y="246"/>
-        <UsageCount Value="85"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="555"/>
+        <CursorPos X="3" Y="557"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../mnlibrary_laz/ugui.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="14"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="udb_tools_design.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="670"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="676"/>
         <CursorPos X="27" Y="688"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../mnlibrary_laz/ujson.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="95"/>
       </Unit>
       <Unit>
         <Filename Value="../mnlibrary_laz/udb_types.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="380"/>
         <CursorPos X="3" Y="382"/>
-        <UsageCount Value="85"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="95"/>
       </Unit>
       <Unit>
         <Filename Value="../jamharah/db_design.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="327"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="13"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/lazutils/lazfileutils.pas"/>
@@ -105,22 +103,20 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="33"/>
         <CursorPos X="29" Y="43"/>
-        <UsageCount Value="16"/>
+        <UsageCount Value="15"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/lcl/include/dbcustomnavigator.inc"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="481"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="482"/>
         <CursorPos Y="491"/>
         <UsageCount Value="18"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="udb_tools_design copy.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="568"/>
-        <UsageCount Value="19"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/lcl/dbgrids.pas"/>
@@ -128,7 +124,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4117"/>
         <CursorPos Y="4129"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/fpcsrc/packages/fcl-db/src/base/db.pas"/>
@@ -136,129 +132,129 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="226"/>
         <CursorPos X="24" Y="239"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="dbtools.lpr"/>
-        <Caret Line="42" Column="10" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="80" Column="11" TopLine="68"/>
+        <Filename Value="udtm.pas"/>
+        <Caret Line="391" TopLine="373"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="85" Column="26" TopLine="74"/>
+        <Caret Line="392" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="102" Column="35" TopLine="83"/>
+        <Caret Line="388" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="112" Column="65" TopLine="93"/>
+        <Caret Line="390" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="123" Column="23" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_types.pas"/>
-        <Caret Line="143" Column="17" TopLine="130"/>
+        <Caret Line="391" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="85" Column="26" TopLine="74"/>
+        <Caret Line="392" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="40" Column="29" TopLine="30"/>
+        <Caret Line="388" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="47" Column="22" TopLine="30"/>
+        <Caret Line="390" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="227" Column="16" TopLine="221"/>
+        <Caret Line="391" TopLine="374"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="70" Column="10" TopLine="59"/>
+        <Caret Line="392" TopLine="374"/>
       </Position>
       <Position>
-        <Filename Value="../mnlibrary_laz/udb_types.pas"/>
-        <Caret Line="473" Column="20" TopLine="441"/>
+        <Filename Value="udtm.pas"/>
+        <Caret Line="388" TopLine="356"/>
       </Position>
       <Position>
-        <Filename Value="../mnlibrary_laz/udb_types.pas"/>
-        <Caret Line="53" Column="24" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_types.pas"/>
-        <Caret Line="78" Column="23" TopLine="61"/>
+        <Filename Value="udtm.pas"/>
+        <Caret Line="51" Column="14" TopLine="42"/>
       </Position>
       <Position>
         <Filename Value="dbtools.lpr"/>
-        <Caret Line="42" Column="10" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="80" Column="11" TopLine="68"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="568" Column="3" TopLine="564"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="564" Column="11" TopLine="564"/>
-      </Position>
-      <Position>
-        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="542" Column="11" TopLine="539"/>
+        <Caret Line="38" Column="24" TopLine="20"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="433" Column="56" TopLine="301"/>
+        <Caret Line="74" Column="10" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="6" Column="47"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="22" Column="18" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="39" Column="18" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="56" Column="18" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="73" Column="18" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="90" Column="18" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="udb_tools_design.pas"/>
+        <Caret Line="120" Column="328" TopLine="116"/>
       </Position>
       <Position>
         <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
-        <Caret Line="89" Column="11" TopLine="78"/>
+        <Caret Line="532" Column="16" TopLine="520"/>
+      </Position>
+      <Position>
+        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
+        <Caret Line="85" Column="11" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
+        <Caret Line="532" Column="18" TopLine="516"/>
+      </Position>
+      <Position>
+        <Filename Value="../mnlibrary_laz/udb_basic.pas"/>
+        <Caret Line="83" Column="11" TopLine="70"/>
       </Position>
       <Position>
         <Filename Value="umain.pas"/>
-        <Caret Line="2" TopLine="2"/>
+        <Caret Line="284" Column="25" TopLine="280"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="282" Column="3" TopLine="280"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="67" Column="56" TopLine="53"/>
+        <Caret Line="65" Column="15" TopLine="55"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="428" Column="21" TopLine="422"/>
+        <Caret Line="358" TopLine="353"/>
       </Position>
       <Position>
         <Filename Value="udtm.pas"/>
-        <Caret Line="50" Column="14" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="udtm.pas"/>
-        <Caret Line="281" Column="54" TopLine="266"/>
-      </Position>
-      <Position>
-        <Filename Value="udtm.pas"/>
-        <Caret Line="65" Column="15" TopLine="56"/>
-      </Position>
-      <Position>
-        <Filename Value="udtm.pas"/>
-        <Caret Line="400" Column="16" TopLine="394"/>
-      </Position>
-      <Position>
-        <Filename Value="udtm.pas"/>
-        <Caret Line="46" Column="16" TopLine="36"/>
+        <Caret Line="381" Column="7" TopLine="370"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -273,7 +269,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="umain.pas"/>
-        <Line Value="222"/>
+        <Line Value="277"/>
       </Item>
     </BreakPoints>
   </Debugging>
